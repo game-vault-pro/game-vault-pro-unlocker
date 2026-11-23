@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffffff">
+<title>Game Vault Pro 𖤗 | Get Your Link</title>
+<style>
+:root{--navy:#0b2c68;--ink:#151923;--muted:#687080}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+header{height:104px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 9px 28px #172b5010;border-radius:0 0 18px 18px}
+.brand{font-size:clamp(22px,5vw,34px);font-weight:800;color:var(--navy);letter-spacing:-1.2px}
+.menu{font-size:30px;color:var(--navy)}
+main{width:min(100% - 36px,560px);margin:0 auto;padding:88px 0 60px;text-align:center}
+h1{font-size:clamp(32px,7vw,48px);line-height:1.28;color:var(--navy);margin:0 0 12px;font-weight:800}
+.sub{display:inline-block;background:#eeeeff;color:#5966d7;font-weight:800;letter-spacing:1px;border-radius:30px;padding:14px 26px;font-size:14px;margin-bottom:54px}
+.step{height:94px;border:0;border-radius:21px;margin:0 0 19px;width:100%;display:flex;align-items:center;justify-content:space-between;padding:0 28px;color:#fff;font-size:20px;font-weight:700;text-decoration:none;box-shadow:0 10px 22px #10182814;cursor:pointer}
+.step .symbol{font-size:26px;width:34px;text-align:left}
+.step .arrow{font-size:29px}
+.wa1{background:linear-gradient(105deg,#22c55e,#078f78)}
+.tiktok{background:linear-gradient(105deg,#59c7c4,#d44876)}
+.wa2{background:linear-gradient(105deg,#22c55e,#078f78)}
+.status{font-size:20px;margin:43px 0 14px}
+.track{height:13px;background:#e9edf1;border-radius:20px;overflow:hidden;margin:0 18px 22px}
+.fill{height:100%;width:0;background:linear-gradient(90deg,#6031d5,#2876f5);border-radius:20px;transition:width .25s}
+.unlock{height:94px;border:0;border-radius:21px;width:100%;color:#fff;font-size:20px;font-weight:700;background:linear-gradient(105deg,#a66be0,#6c9df5);display:flex;align-items:center;justify-content:space-between;padding:0 28px;cursor:not-allowed;opacity:.65;box-shadow:0 10px 22px #10182814}
+.unlock.ready{background:linear-gradient(105deg,#6420d6,#2876f5);opacity:1;cursor:pointer}
+.note{font-size:13px;line-height:1.55;color:var(--muted);margin:24px 8px 0}
+@media(max-width:390px){main{padding-top:65px}.step,.unlock{height:82px;font-size:17px;padding:0 20px}.sub{margin-bottom:38px}}
+</style>
+</head>
+<body>
+<header><div class="brand">Game Vault Pro 𖤗</div><div class="menu" aria-hidden="true">☰</div></header>
+<main>
+  <h1>Complete Steps to<br>Get Link</h1>
+  <div class="sub">COMPLETE ALL THE STEPS BELOW</div>
+
+  <a class="step wa1" href="https://whatsapp.com/channel/0029VbCshfVDuMRWuM5tfK03" target="_blank" rel="noopener">
+    <span class="symbol">◉</span><span>Join WhatsApp Channel 1</span><span class="arrow">➜</span>
+  </a>
+  <a class="step tiktok" href="https://www.tiktok.com/@game_vault_pro?_r=1&amp;_t=ZS-9BegXGOAQDN" target="_blank" rel="noopener">
+    <span class="symbol">♪</span><span>Follow on TikTok</span><span class="arrow">➜</span>
+  </a>
+  <a class="step wa2" href="https://whatsapp.com/channel/0029Vb9NHJx1nozE4zLoAY0D" target="_blank" rel="noopener">
+    <span class="symbol">◉</span><span>Join WhatsApp Channel 2</span><span class="arrow">➜</span>
+  </a>
+
+  <div class="status" id="status">Steps Completed 0/3</div>
+  <div class="track"><div class="fill" id="fill"></div></div>
+  <button class="unlock" id="unlock" disabled><span>Get Your Link</span><span class="arrow">➜</span></button>
+  <p class="note">After visiting each page, return here and tap the matching step again to mark it complete. This page uses self-confirmation; it cannot independently verify channel joins or TikTok follows.</p>
+</main>
+<script>
+const links = [
+  "https://whatsapp.com/channel/0029VbCshfVDuMRWuM5tfK03",
+  "https://www.tiktok.com/@game_vault_pro?_r=1&_t=ZS-9BegXGOAQDN",
+  "https://whatsapp.com/channel/0029Vb9NHJx1nozE4zLoAY0D"
+];
+const buttons = [...document.querySelectorAll(".step")];
+const done = new Set();
+const status = document.getElementById("status");
+const fill = document.getElementById("fill");
+const unlock = document.getElementById("unlock");
+buttons.forEach((button,index)=>{
+  button.addEventListener("click",()=>{
+    done.add(index);
+    button.style.background="#25a34a";
+    button.querySelector(".arrow").textContent="✓";
+    status.textContent=`Steps Completed ${done.size}/3`;
+    fill.style.width=(done.size/3*100)+"%";
+    if(done.size===3){unlock.disabled=false;unlock.classList.add("ready");}
+  });
+});
+unlock.addEventListener("click",()=>{
+  if(done.size===3) window.location.href="https://www.mediafire.com/file/peq6zuz3o3rn84o/UnlockAllCharacter-NarutoultimateninjastormDaffanzerr.zip/file";
+});
+</script>
+</body>
+</html>
